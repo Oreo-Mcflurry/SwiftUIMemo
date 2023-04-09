@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     @ObservedObject var memo: Memo
+    @State private var showComposer = false
     @EnvironmentObject var store: MemoStore
     var body: some View {
         VStack{
@@ -29,12 +30,26 @@ struct DetailView: View {
         }
         .navigationTitle("메모 보기")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItemGroup(placement: .principal) {
+                Button{
+                    showComposer = true
+                } label: {
+                    Image(systemName: "square.and.pencil")
+                }
+            }   // ToolbarItemGroup
+        }
+        .sheet(isPresented: $showComposer) {
+            ComeposeView(memo: memo)
+        }
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(memo: Memo(content: "Hello"))
-            .environmentObject(MemoStore())
+        NavigationView{
+            DetailView(memo: Memo(content: "Hello"))
+                .environmentObject(MemoStore())
+        }
     }
 }

@@ -33,14 +33,15 @@ struct MainListView: View {
             .sheet(isPresented: $showComposer) {
                 ComeposeView()
             }
+            .navigationViewStyle(.stack)
         }   // navigationView
     }   // body
 }
 
 struct MainListView_Previews: PreviewProvider {
     static var previews: some View {
-        MainListView()
-            .environmentObject(MemoStore())
+            MainListView()
+                .environmentObject(MemoStore())
     }
 }
 
