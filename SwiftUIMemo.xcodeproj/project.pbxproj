@@ -20,6 +20,7 @@
 		B86BF6CE29E267A40061B37B /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF6CD29E267A40061B37B /* MemoStore.swift */; };
 		B86BF6D329E26EED0061B37B /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF6D229E26EED0061B37B /* MemoCell.swift */; };
 		B86BF6D529E270D90061B37B /* ComeposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF6D429E270D90061B37B /* ComeposeView.swift */; };
+		B86BF6D729E274A90061B37B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF6D629E274A90061B37B /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B86BF6CD29E267A40061B37B /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		B86BF6D229E26EED0061B37B /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		B86BF6D429E270D90061B37B /* ComeposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComeposeView.swift; sourceTree = "<group>"; };
+		B86BF6D629E274A90061B37B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				B86BF6D229E26EED0061B37B /* MemoCell.swift */,
 				B86BF6C929E262290061B37B /* MainListView.swift */,
 				B86BF6D429E270D90061B37B /* ComeposeView.swift */,
+				B86BF6D629E274A90061B37B /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B86BF6D329E26EED0061B37B /* MemoCell.swift in Sources */,
+				B86BF6D729E274A90061B37B /* DetailView.swift in Sources */,
 				B86BF69C29E261BD0061B37B /* SwiftUIMemo.xcdatamodeld in Sources */,
 				B86BF6CE29E267A40061B37B /* MemoStore.swift in Sources */,
 				B86BF6D529E270D90061B37B /* ComeposeView.swift in Sources */,
