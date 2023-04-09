@@ -10,7 +10,9 @@ import SwiftUI
 struct DetailView: View {
     @ObservedObject var memo: Memo
     @State private var showComposer = false
+    @State private var showDeleteAlert = false
     @EnvironmentObject var store: MemoStore
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack{
             ScrollView{
@@ -32,11 +34,33 @@ struct DetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItemGroup(placement: .principal) {
-                Button{
-                    showComposer = true
-                } label: {
-                    Image(systemName: "square.and.pencil")
-                }
+                HStack{
+                    Button{     //삭제
+                        showDeleteAlert = true
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+                    .foregroundColor(.red)
+                    .alert("삭제 확인", isPresented: $showDeleteAlert) {
+                        Button(role: .destructive){
+                            store.delete(memo: memo)
+                            dismiss()
+                        } label: {
+                            Text("삭제")
+                        }
+                    } message: {
+                        Text("메모를 삭제할까요?")
+                    }
+                    
+                    Spacer()
+                    
+                    Button{     // 편집
+                        showComposer = true
+                    } label: {
+                        Image(systemName: "square.and.pencil")
+                    }
+                    .padding()
+                }   //HStack
             }   // ToolbarItemGroup
         }
         .sheet(isPresented: $showComposer) {
