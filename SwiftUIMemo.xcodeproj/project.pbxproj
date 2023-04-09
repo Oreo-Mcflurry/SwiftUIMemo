@@ -10,12 +10,12 @@
 		B86BF69729E261BD0061B37B /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF69629E261BD0061B37B /* SwiftUIMemoApp.swift */; };
 		B86BF69929E261BD0061B37B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF69829E261BD0061B37B /* Persistence.swift */; };
 		B86BF69C29E261BD0061B37B /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B86BF69A29E261BD0061B37B /* SwiftUIMemo.xcdatamodeld */; };
-		B86BF69E29E261BD0061B37B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF69D29E261BD0061B37B /* ContentView.swift */; };
 		B86BF6A029E261BE0061B37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86BF69F29E261BE0061B37B /* Assets.xcassets */; };
 		B86BF6A429E261BE0061B37B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86BF6A329E261BE0061B37B /* Preview Assets.xcassets */; };
 		B86BF6AE29E261BE0061B37B /* SwiftUIMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF6AD29E261BE0061B37B /* SwiftUIMemoTests.swift */; };
 		B86BF6B829E261BE0061B37B /* SwiftUIMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF6B729E261BE0061B37B /* SwiftUIMemoUITests.swift */; };
 		B86BF6BA29E261BE0061B37B /* SwiftUIMemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF6B929E261BE0061B37B /* SwiftUIMemoUITestsLaunchTests.swift */; };
+		B86BF6CA29E262290061B37B /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BF6C929E262290061B37B /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		B86BF69629E261BD0061B37B /* SwiftUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoApp.swift; sourceTree = "<group>"; };
 		B86BF69829E261BD0061B37B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B86BF69B29E261BD0061B37B /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
-		B86BF69D29E261BD0061B37B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B86BF69F29E261BE0061B37B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B86BF6A129E261BE0061B37B /* SwiftUIMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIMemo.entitlements; sourceTree = "<group>"; };
 		B86BF6A329E261BE0061B37B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		B86BF6B329E261BE0061B37B /* SwiftUIMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86BF6B729E261BE0061B37B /* SwiftUIMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoUITests.swift; sourceTree = "<group>"; };
 		B86BF6B929E261BE0061B37B /* SwiftUIMemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B86BF6C929E262290061B37B /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +79,7 @@
 		B86BF68A29E261BD0061B37B = {
 			isa = PBXGroup;
 			children = (
+				B86BF6C629E261D80061B37B /* Shared */,
 				B86BF69529E261BD0061B37B /* SwiftUIMemo */,
 				B86BF6AC29E261BE0061B37B /* SwiftUIMemoTests */,
 				B86BF6B629E261BE0061B37B /* SwiftUIMemoUITests */,
@@ -99,12 +100,9 @@
 		B86BF69529E261BD0061B37B /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
-				B86BF69629E261BD0061B37B /* SwiftUIMemoApp.swift */,
-				B86BF69829E261BD0061B37B /* Persistence.swift */,
-				B86BF69D29E261BD0061B37B /* ContentView.swift */,
-				B86BF69F29E261BE0061B37B /* Assets.xcassets */,
 				B86BF6A129E261BE0061B37B /* SwiftUIMemo.entitlements */,
-				B86BF69A29E261BD0061B37B /* SwiftUIMemo.xcdatamodeld */,
+				B86BF69629E261BD0061B37B /* SwiftUIMemoApp.swift */,
+				B86BF69F29E261BE0061B37B /* Assets.xcassets */,
 				B86BF6A229E261BE0061B37B /* Preview Content */,
 			);
 			path = SwiftUIMemo;
@@ -133,6 +131,32 @@
 				B86BF6B929E261BE0061B37B /* SwiftUIMemoUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIMemoUITests;
+			sourceTree = "<group>";
+		};
+		B86BF6C629E261D80061B37B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B86BF6C829E261ED0061B37B /* CoreData */,
+				B86BF6C729E261E20061B37B /* Memory */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B86BF6C729E261E20061B37B /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		B86BF6C829E261ED0061B37B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B86BF69A29E261BD0061B37B /* SwiftUIMemo.xcdatamodeld */,
+				B86BF6C929E262290061B37B /* MainListView.swift */,
+				B86BF69829E261BD0061B37B /* Persistence.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B86BF69C29E261BD0061B37B /* SwiftUIMemo.xcdatamodeld in Sources */,
+				B86BF6CA29E262290061B37B /* MainListView.swift in Sources */,
 				B86BF69729E261BD0061B37B /* SwiftUIMemoApp.swift in Sources */,
-				B86BF69E29E261BD0061B37B /* ContentView.swift in Sources */,
 				B86BF69929E261BD0061B37B /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
